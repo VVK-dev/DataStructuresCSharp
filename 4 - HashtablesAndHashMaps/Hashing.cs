@@ -5,20 +5,7 @@
 
         //In the 12th Chapter (Optimization) of Advanced World C#, I went over hashsets at a very basic level. I 
         //mentioned hashing and hashcodes but did not go into it. Here, I will be taking a deep dive into the
-        //process of hashing plus going over hashtables and hashmaps.
-
-        //HASHTABLES - PART 1
-
-        //A hashtable is a data structure that maps some values to some other values using a method called hashing.
-        //The first set of values is called keys, and the second set is simply called values. Keys must all be 
-        //unique and immutable, no such restriction exists on values.
-
-        //Generally, how a hash table works is that given a key-value pair, a hash value y is found using the key.
-        //The key value pair is then added at the index y.
-
-        //Before we can move with hastables, we must explore hashing.
-
-        //I will continue with HashTables in another file later on.
+        //process of hashing.
 
         //HASHING
 

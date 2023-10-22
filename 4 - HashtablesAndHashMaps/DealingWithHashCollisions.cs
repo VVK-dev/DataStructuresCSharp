@@ -258,69 +258,12 @@ namespace HashtablesAndHashMaps
         //interfere with future searches but instead help them. This way, we can clear clutter with the tombstones and
         //thus reduce the load factor of the hashtable.
 
-        //One small anecdote: this is actually only possible if we are searching for the most latest element added.
-        //If we try to do this when searching for another element in the probing cycle k4:v4, we will place a null
-        //element where it originally was making k5:v5 inaccessible. One way we can check if the element we are
-        //searching for is the msot recent element added is to first find the element, then run the probing sequence
-        //once more and check that index. If that index is empty, the element we found is the last element. If that
-        //index isn't empty, then the element we found is not at the end of the probing cycle.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        //One small anecdote: this is actually only possible if we are searching for the latest element added.
+        //If we try to do this when searching for another element in the probing cycle like k4:v4 for example, we will
+        //place a null element where it originally was making k5:v5 inaccessible. One way we can check if the element
+        //we are searching for is the msot recent element added is to first find the element, then run the probing
+        //sequence once more and check that index. If that index is empty, the element we found is the last element.
+        //If that index isn't empty, then the element we found is not at the end of the probing cycle.
 
         //NOTE: Now after discussing all of this, remember that open addressing only makes sense with low load factors,
         //so be sure to resize the hashtable once you hit a certain load factor limit you set!!!
