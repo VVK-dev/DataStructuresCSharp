@@ -3,9 +3,9 @@
     class Hashing
     {
 
-        //In the 12th Chapter (Optimization) of Advanced World C#, I went over hashsets at a very basic level. I 
-        //mentioned hashing and hashcodes but did not go into it. Here, I will be taking a deep dive into the
-        //process of hashing.
+        //In the 12th chapter (Optimization) of Advanced World C#, I went over hashsets at a very basic level.
+        //In the 3rd chapter (LINQ and Collections), I went over HashMaps i.e. Dictionaries. I mentioned hashing
+        //and hashcodes but did not go into it. Here, I will be taking a deep dive into the process of hashing.
 
         //HASHING
 
