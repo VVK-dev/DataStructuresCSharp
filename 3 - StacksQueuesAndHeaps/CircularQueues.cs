@@ -30,15 +30,15 @@ namespace StacksQueuesAndHeaps
 
         //Note: I have used console.writeline and other shortcuts like taking in nodes as arguments in certain
         //methods. I have done this for simplicity of explanation, but in the real world code should not be written
-        //like this. The methods should generally only take in the date of a given node as an argument and instead
+        //like this. The methods should generally only take in the data of a given node as an argument, and instead
         //of these methods printing anything to the screen in certain cases, they should throw exceptions.
 
 
         //PROPERTIES
 
-        public int Size { get; set; } = 0; //no setter as one can't set the size
-        public Node<T>? Head { get; set; } //the tail is null by default as the list is empty
-        public Node<T>? Tail { get; set; } //the tail is null by default as the list is empty
+        public int Size { get; private set; } = 0; //private setter as users can't set the size
+        public Node<T>? Head { get; private set; } //the head is null by default as the list is empty
+        public Node<T>? Tail { get; private set; } //the tail is null by default as the list is empty
 
         //We don't actually need to keep track of the head as Tail.Next is always the head, but in general it is
         //better to for more readable code and for better performance (since the head is saved to a variable, you are
